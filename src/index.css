@@ -164,7 +164,6 @@ input[type='checkbox'] {
   }
 }
 
-/*
 @media only screen and (max-width: 550px) {
   body {
     font-size: 1.8rem;
@@ -175,32 +174,22 @@ input[type='checkbox'] {
   }
 
   .add-form {
-    display: grid;
-    grid-template-areas:
-      'one one'
-      'two three'
-      'four four';
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .one {
-    grid-area: one;
-  }
-  .two {
-    grid-area: two;
-  }
-  .three {
-    grid-area: three;
-    width: 60%;
-    justify-self: end;
-  }
-  .four {
-    grid-area: four;
-    width: 50%;
-    justify-self: center;
+  button,
+  select,
+  input {
+    background-color: #ffebb3;
+    color: #5a3e2b;
+    font-family: inherit;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.2rem 3.2rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 
   .actions {
@@ -210,4 +199,3 @@ input[type='checkbox'] {
     gap: 20px;
   }
 }
-*/
