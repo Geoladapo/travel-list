@@ -136,6 +136,7 @@ input[type='checkbox'] {
   body {
     font-size: 2rem;
   }
+
   .add-form {
     display: grid;
     grid-template-areas:
