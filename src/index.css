@@ -164,6 +164,7 @@ input[type='checkbox'] {
   }
 }
 
+/*
 @media only screen and (max-width: 550px) {
   body {
     font-size: 1.8rem;
@@ -209,3 +210,4 @@ input[type='checkbox'] {
     gap: 20px;
   }
 }
+*/
