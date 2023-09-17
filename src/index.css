@@ -1,6 +1,4 @@
-
-
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -15,8 +13,8 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
-  font-family: "Quicksand";
+  color: #0a0807;
+  font-family: 'Quicksand';
   font-weight: 500;
 }
 
@@ -30,7 +28,7 @@ body {
 h1 {
   text-align: center;
   background-color: #f4a226;
-  font-family: "Monoton";
+  font-family: 'Monoton';
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -40,12 +38,13 @@ h1 {
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #0a0807;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  color: #fff;
 }
 
 h3 {
@@ -73,7 +72,7 @@ input {
 }
 
 .list {
-  background-color: #5a3e2b;
+  background-color: #0a0807;
   color: #ffebb3;
   padding: 4rem 0;
 
@@ -111,7 +110,7 @@ input {
   gap: 1.2rem;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   height: 2rem;
   width: 2rem;
   accent-color: #e5771f;
@@ -127,8 +126,78 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #f4a226;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+@media only screen and (max-width: 950px) {
+  .add-form {
+    display: grid;
+    grid-template-areas:
+      'one one one'
+      'two three four';
+    justify-content: center;
+    text-align: center;
+  }
+
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+
+  .stats {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .add-form {
+    display: grid;
+    grid-template-areas:
+      'one one'
+      'two three'
+      'four four';
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+    width: 60%;
+    justify-self: end;
+  }
+  .four {
+    grid-area: four;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
