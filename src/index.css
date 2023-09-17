@@ -166,11 +166,19 @@ input[type='checkbox'] {
 
 @media only screen and (max-width: 550px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: #0a0807;
+    font-family: 'Quicksand';
+    font-weight: 500;
   }
 
   h1 {
     font-size: 40px;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 
   .add-form {
